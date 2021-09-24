@@ -16,7 +16,7 @@ exports.getVenue = (req, res, next ) => {
 // @desc Post Venues
 // @route Post /api/v1/bootcamp/
 // @access Private
-exports.postVenue = (req, res, next ) => {
+exports.createVenue = (req, res, next ) => {
     res.status(200).json({ success: true, msg: 'create a venue'});
 }
 
@@ -31,6 +31,6 @@ exports.updateVenue = (req, res, next ) => {
 // @desc Delete Venues
 // @route Delete /api/v1/bootcamp/:id
 // @access Private
-exports.deleteVenues = (req, res, next ) => {
+exports.deleteVenue = (req, res, next ) => {
     res.status(200).json({ success: true, msg: 'delete a venue'});
 }
